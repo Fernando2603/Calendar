@@ -46,6 +46,7 @@ jobs:
           name: calendar-${{ inputs.year || 'current-year' }}-tz${{ inputs.timezone }}
           path: calendar.png
           retention-days: 30
+          compression-level: 0
 
       - name: Create comment with calendar info
         uses: actions/github-script@v7
