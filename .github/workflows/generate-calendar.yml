@@ -41,7 +41,7 @@ jobs:
           fi
 
       - name: Upload calendar artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: calendar-${{ inputs.year || 'current-year' }}-tz${{ inputs.timezone }}
           path: calendar.png
